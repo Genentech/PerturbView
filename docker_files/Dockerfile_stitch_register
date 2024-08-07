@@ -1,0 +1,5 @@
+FROM jupyter-3.5.2-python3.10
+
+RUN pip install --upgrade pip
+RUN pip install wsireg m2stitch basicpy geopandas shapely
+RUN pip install jax[cpu]==0.3.22 && pip install jaxlib==0.3.22 -f https://storage.googleapis.com/jax-releases/jax_releases.html

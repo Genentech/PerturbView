@@ -1,0 +1,29 @@
+# fails with python==3.12.1
+# works with python==3.10.13
+scikit-image
+scipy
+numpy
+seaborn
+matplotlib
+dask
+xarray
+pandas
+zarr
+tqdm
+simpleitk
+aicsimageio[nd2]
+trackpy
+shapely
+geopandas
+dask_image
+ome_zarr
+ipykernel
+basicpy
+natsort
+anndata
+snakemake
+m2stitch @ git+https://github.com/yfukai/m2stitch.git #@fa3fd9919d568c47c132806d5b88353abcc79df2
+wsireg @ git+https://github.com/NHPatterson/wsireg.git #@5ad827cd05a63bda7129b875b5cb5220cd1b08ca # fails on 3.12.1
+jax==0.4.23 #basicpy requires an older version
+jaxlib=0.4.23 #older version for bascipy
+spotiflow @ git+https://www.github.com/weigertlab/spotiflow.git
