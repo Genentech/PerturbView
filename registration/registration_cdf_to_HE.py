@@ -9,10 +9,6 @@ import SimpleITK as sitk
 from wsireg.parameter_maps.preprocessing import ImagePreproParams
 from wsireg.reg_images.loader import reg_image_loader
 
-# sys.path.append('/gne/data/t3imagedata/conrad_store/modules/')
-# from wsireg_mod import WsiReg2D
-# from wsireg_mod.img_utils import *
-
 
 # image conversion
 def itk_image_to_sitk_image(image):
