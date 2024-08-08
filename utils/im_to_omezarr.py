@@ -17,7 +17,7 @@ from ome_zarr.writer import write_image
 from zarr.storage import default_compressor
 
 
-# Copied from
+# Copied from: https://allencellmodeling.github.io/aicsimageio/aicsimageio.writers.html.  Minor tweaks for compatibility.
 class OmeZarrWriter:
     def __init__(self, uri: types.PathLike):
         """
