@@ -7,6 +7,7 @@ script_dir = "scripts"  # Assuming scripts are directly callable
 sub_dir = "eTK146B"
 sample_dir = Path(f"/gstore/data/ctgbioinfo/kudot3/eTK146/{sub_dir}/ISS")
 pheno_dir = Path(f"/gstore/data/ctgbioinfo/kudot3/eTK146/{sub_dir}/pheno")
+grnas = "/gstore/data/ctgbioinfo/kudot3/eTK128/gRNAs_mouseMinimal1.csv"
 output_dir = Path(
     "/gnet/is1/p01/shares/ctg-microscopy/EL/perturbview_output/"
 ).joinpath(sub_dir)
@@ -174,7 +175,7 @@ rule call_peaks:
         "python scripts/call_bases.py {input.registered} -o {output.peaks} -t {temp_dir} -p spotiflow -r 2 -d 5 --no-xenium"
 
 
-grnas = "/gstore/data/ctgbioinfo/kudot3/eTK128/gRNAs_mouseMinimal1.csv"
+
 # Channel map JSON creation
 channel_map = output_dir / "channel_map.json"
 with open(channel_map, "w") as f:
