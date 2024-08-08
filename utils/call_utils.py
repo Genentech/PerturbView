@@ -78,7 +78,7 @@ def detect_peaks_spotiflow(
     """
     fpath = Path(__file__).resolve()
     model = Spotiflow.from_folder(
-        str(fpath.parents[2].joinpath("disco_fish", "models", "general"))
+        str(fpath.parents[1].joinpath("models", "general"))
     )
     peak_zarr = zarr.TempStore(
         suffix="_peakmask",
