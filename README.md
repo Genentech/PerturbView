@@ -48,3 +48,7 @@ get_nuclei_masks # Xenium is already segmented
 ```
 
 Additionally the keyword argument `--xenium` should be added to the rule `call_peaks`.
+
+### Dataset
+For now, please download the dataset from here.
+https://ftp.ebi.ac.uk/pub/databases/IDR/idr0162-kudo-perturbview/
